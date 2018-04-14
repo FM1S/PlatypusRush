@@ -20,23 +20,43 @@ public class ViewPagerSampleActivity extends Activity {
 
         View page = inflater.inflate(R.layout.page, null);
         TextView textView = (TextView) page.findViewById(R.id.text_view);
-        textView.setText("Страница 1");
+        textView.setText("Понедельник");
         pages.add(page);
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
-        textView.setText("Страница 2");
+        textView.setText("Вторник");
         pages.add(page);
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
-        textView.setText("Страница 3");
+        textView.setText("Среда");
+        pages.add(page);
+
+        page = inflater.inflate(R.layout.page, null);
+        textView = (TextView) page.findViewById(R.id.text_view);
+        textView.setText("Четверг");
+        pages.add(page);
+
+        page = inflater.inflate(R.layout.page, null);
+        textView = (TextView) page.findViewById(R.id.text_view);
+        textView.setText("Пятница");
+        pages.add(page);
+
+        page = inflater.inflate(R.layout.page, null);
+        textView = (TextView) page.findViewById(R.id.text_view);
+        textView.setText("Суббота");
+        pages.add(page);
+
+        page = inflater.inflate(R.layout.page, null);
+        textView = (TextView) page.findViewById(R.id.text_view);
+        textView.setText("Воскресенье");
         pages.add(page);
 
         SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(pages);
         ViewPager viewPager = new ViewPager(this);
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(1);
+        viewPager.setCurrentItem(0);
 
         setContentView(viewPager);
     }

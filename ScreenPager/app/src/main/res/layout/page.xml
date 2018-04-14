@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="10dip"
@@ -7,11 +8,39 @@
 
     <TextView
         android:id="@+id/text_view"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_centerInParent="true"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#1b87cd"
         android:gravity="center"
-        android:background="#888"
         android:textColor="#fff"
-        android:textSize="30dip"/>
+        android:textSize="30sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="103dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@color/colorPrimaryDark"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentRight="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </RelativeLayout>
