@@ -36,38 +36,121 @@ public class ViewPagerSampleActivity extends AppCompatActivity {
         TextView textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Понедельник");
         pages.add(page);
+        FloatingActionButton act1 = (FloatingActionButton) pages.get(0).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
+
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Вторник");
         pages.add(page);
+        act1 = (FloatingActionButton) pages.get(1).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Среда");
         pages.add(page);
+        act1 = (FloatingActionButton) pages.get(2).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Четверг");
         pages.add(page);
+        act1 = (FloatingActionButton) pages.get(3).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Пятница");
         pages.add(page);
+       act1 = (FloatingActionButton) pages.get(4).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
 
         page = inflater.inflate(R.layout.page, null);
         textView = (TextView) page.findViewById(R.id.text_view);
         textView.setText("Суббота");
         pages.add(page);
+        act1 = (FloatingActionButton) pages.get(5).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
 
+            }
+        });
 
+        page = inflater.inflate(R.layout.page, null);
+        textView = (TextView) page.findViewById(R.id.text_view);
+        textView.setText("Суббота");
+        pages.add(page);
+        act1 = (FloatingActionButton) pages.get(6).findViewById(R.id.add_task);
+        act1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
+                allEds.add(view);
+                final LinearLayout linear = findViewById(R.id.linear);
+                linear.addView(view);
+
+            }
+        });
 
         SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(pages);
         ViewPager viewPager = new ViewPager(this);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setCurrentItem(0);
+
+
         /*fab = new FloatingActionButton(this);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -84,17 +167,7 @@ public class ViewPagerSampleActivity extends AppCompatActivity {
         */
         setContentView(viewPager);
 
-        FloatingActionButton act1 = (FloatingActionButton) pages.get(0).findViewById(R.id.add_task);
-        act1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final View view = getLayoutInflater().inflate(R.layout.dinamik_day, null);
-                allEds.add(view);
-                final LinearLayout linear = findViewById(R.id.linear);
-                linear.addView(view);
 
-            }
-        });
 
 
     }
